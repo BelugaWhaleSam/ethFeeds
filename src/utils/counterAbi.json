@@ -1,0 +1,118 @@
+[
+	{
+	  "anonymous": false,
+	  "inputs": [
+		{
+		  "indexed": false,
+		  "internalType": "address",
+		  "name": "recipient",
+		  "type": "address"
+		},
+		{
+		  "indexed": false,
+		  "internalType": "uint256",
+		  "name": "feedbackId",
+		  "type": "uint256"
+		},
+		{
+		  "indexed": false,
+		  "internalType": "string",
+		  "name": "role",
+		  "type": "string"
+		},
+		{
+		  "indexed": false,
+		  "internalType": "string",
+		  "name": "Name",
+		  "type": "string"
+		},
+		{
+		  "indexed": false,
+		  "internalType": "string",
+		  "name": "email",
+		  "type": "string"
+		},
+		{
+		  "indexed": false,
+		  "internalType": "string",
+		  "name": "feedback",
+		  "type": "string"
+		}
+	  ],
+	  "name": "AddFeedback",
+	  "type": "event"
+	},
+	{
+	  "inputs": [
+		{
+		  "internalType": "string",
+		  "name": "role",
+		  "type": "string"
+		},
+		{
+		  "internalType": "string",
+		  "name": "Name",
+		  "type": "string"
+		},
+		{
+		  "internalType": "string",
+		  "name": "email",
+		  "type": "string"
+		},
+		{
+		  "internalType": "string",
+		  "name": "feedback",
+		  "type": "string"
+		}
+	  ],
+	  "name": "addFeedback",
+	  "outputs": [],
+	  "stateMutability": "nonpayable",
+	  "type": "function"
+	},
+	{
+	  "inputs": [],
+	  "name": "getAllFeedback",
+	  "outputs": [
+		{
+		  "components": [
+			{
+			  "internalType": "uint256",
+			  "name": "id",
+			  "type": "uint256"
+			},
+			{
+			  "internalType": "address",
+			  "name": "username",
+			  "type": "address"
+			},
+			{
+			  "internalType": "string",
+			  "name": "role",
+			  "type": "string"
+			},
+			{
+			  "internalType": "string",
+			  "name": "Name",
+			  "type": "string"
+			},
+			{
+			  "internalType": "string",
+			  "name": "email",
+			  "type": "string"
+			},
+			{
+			  "internalType": "string",
+			  "name": "feedback",
+			  "type": "string"
+			}
+		  ],
+		  "internalType": "struct Feeds.FeedbackStruct[]",
+		  "name": "",
+		  "type": "tuple[]"
+		}
+	  ],
+	  "stateMutability": "view",
+	  "type": "function"
+	}
+  ]
