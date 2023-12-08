@@ -11,6 +11,8 @@ import {
   DEFAULT_ENTRYPOINT_ADDRESS,
 } from "@biconomy/account";
 import { IPaymaster, BiconomyPaymaster } from "@biconomy/paymaster";
+import Counter from "./Components/Feedback";
+import Feed from "./Components/Feed";
 
 const bundler: IBundler = new Bundler({
   bundlerUrl:
@@ -142,6 +144,8 @@ export default function Home() {
           <h3>Smart account address:</h3>
           <p>{smartAccount.address}</p>
           <button onClick={logout}>Logout</button>
+          <Counter smartAccount={smartAccount} provider={provider} />
+          <Feed provider={provider} />
         </div>
       )}
     </div>
