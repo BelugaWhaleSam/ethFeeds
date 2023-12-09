@@ -123,14 +123,14 @@ export default function Home() {
 
   return (
     <div>
-      <h1>feeds</h1>
+      <h1>ethFeeds</h1>
       <p>
         feedbacks stored on Polygon Chain, made using social
         login for account abstraction and allows gasless+sponsored transactions for ease.
       </p>
       <p>
         <a href="https://mumbai.polygonscan.com/address/0x02e53fe36999fe03e218354ea03cb934cef6a740">
-          Take me there here
+          Take me there
         </a>
         {" "}
         visit here to view the blocks for feedbacks published on Polygon

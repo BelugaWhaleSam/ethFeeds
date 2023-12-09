@@ -8,6 +8,8 @@ export default defineConfig({
     esbuildOptions: {
       define: {
         global: "globalThis",
+        'process.env.PRIVATE_KEY': `"${process.env.PRIVATE_KEY}"`,
+        'process.env.POLYSCAN_API_KEY': `"${process.env.POLYSCAN_API_KEY}"`
       },
       plugins: [
         NodeGlobalsPolyfillPlugin({
